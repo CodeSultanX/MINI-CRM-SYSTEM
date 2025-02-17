@@ -1,0 +1,156 @@
+body {
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% высоты экрана */
+}
+main {
+    flex: 1; /* Занимает всю оставшуюся высоту */
+}
+
+.fa-telegram{
+    color:deepskyblue ;
+}
+.table tbody{
+    min-height: 5vh;
+    overflow-y: auto !important;
+}
+
+.dropdown-menu {
+    position: absolute !important; /* Выпадающее меню не двигает элементы */
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1050;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 15px;
+}
+
+.dropdown-item a:hover {
+    background: #f8f9fa;
+}
+
+h2.accordion-header{
+    width: 100%;
+}
+.accordion-header button.accordion-button span{
+    display: inline-block;
+    margin-right: 22px;
+}
+.accordion-header button.accordion-button span i{
+    display: inline-block;
+    margin-right: 3px;
+    color: #198754;
+}
+.accordion-button::before {
+    display: none;
+}
+.accordion-button::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 1rem;
+}
+.accordion-button.collapsed::before {
+    content: "\f053";
+}
+
+div.tags-container div.tag,
+.accordion-body p a.tag{
+    display: inline-block;
+    background: #020202;
+    color: #f1f1f1;
+}
+div.tags-container div.tag span{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Стилизация тегов на странице редактирования тегов */
+div.tags-container div.tag{
+    display: inline-block;
+    background: #020202;
+    color: #f1f1f1;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin: 5px 4px;
+}
+div.tags-container div.tag button{
+    border: none;
+    background: inherit;
+    color: #ffffff;
+    padding-left: 11px;
+    border-left: 1px solid #c1c1c1;
+}
+div.tags-container div.tag span{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+div.tags-container{
+    overflow-y: auto;
+    min-height: 50px;
+}
+
+/* Оформление вывода задач (tasks) */
+.accordion-header button{
+    border-radius: 3px;
+    color: #ffffff !important;
+}
+.accordion-header button span{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-body p a.tag:hover,
+.accordion-body p a.tag:hover{
+    background: #198754;
+}
+.filter-priority a{
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.filter-priority a:hover{
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.by-task-tag-title span{
+    color: rgb(101, 173, 240);
+}
+
+.accordion-body p a.tag,
+.card-body p a.tag{
+    display: inline-block;
+    background: #020202;
+    color: #f1f1f1;
+    font-weight: 300;
+}
+.accordion-body p a.tag,
+.card-body p a.tag{
+    text-decoration: none;
+}
+
+.article .container h1 span{
+    color: coral;
+}
+
+.fc-event:hover{
+    background-color: coral;
+    cursor: pointer;
+}
