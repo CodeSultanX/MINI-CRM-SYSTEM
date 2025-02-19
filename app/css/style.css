@@ -17,9 +17,7 @@ main {
     flex: 1; /* Занимает всю оставшуюся высоту */
 }
 
-.fa-telegram{
-    color:deepskyblue ;
-}
+
 .table tbody{
     min-height: 5vh;
     overflow-y: auto !important;

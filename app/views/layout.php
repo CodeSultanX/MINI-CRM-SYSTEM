@@ -30,8 +30,7 @@ $username = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'No-name';
 <!-- Навигационная панель -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="<?='/'?>">CRM System for Telegram 
-        <i class="fa-brands fa-telegram"></i>
+        <a class="navbar-brand" href="<?='/'?>">MINI CRM SYSTEM 
     </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
